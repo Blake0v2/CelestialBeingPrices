@@ -91,14 +91,6 @@ body {
     overflow-y: auto;
 }
 
-.page {
-    display: none;
-}
-
-.page:first-child {
-    display: block;
-}
-
 /* Pricing Section */
 .pricing-section {
     display: flex;
@@ -124,7 +116,7 @@ body {
 
 .pricing-card h3 {
     font-size: 1.8em;
-    color: #e4bf67; 
+    color: #e4bf67;
     margin-bottom: 15px;
 }
 
@@ -146,28 +138,13 @@ body {
 }
 
 .pricing-card strong {
-    color: #e4bf67; 
+    color: #e4bf67;
 }
 
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
     .sidebar {
         width: 180px;
-    }
-
-    .command-category {
-        font-size: 20px; /* Smaller font on mobile */
-    }
-
-    .command-grid {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px; /* Reduced gap between command boxes */
-    }
-
-    .command-box {
-        width: 90%; /* Make boxes wider on mobile */
-        padding: 10px; /* Reduce padding */
     }
 
     .pricing-card {
@@ -178,9 +155,5 @@ body {
     .main-content {
         margin-left: 180px;
         width: calc(100% - 180px);
-    }
-
-    .command-category h3 {
-        font-size: 16px; /* Smaller titles on mobile */
     }
 }
