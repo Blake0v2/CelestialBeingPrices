@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch Angels Dashboard</title>
-    <link rel="stylesheet" href="prices.css">
+    <title>Bot Command Prices</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
         <div class="sidebar">
-            <div class="bot-icon">
-                <img src="https://i.postimg.cc/Pr31Rx40/Here-is-a-non-realistic-profile-picture-in-a-gold-white-and-blue-theme-inspired-by-an-Archangel.png" alt="Bot Icon">
+            <div class="logo">
+                <img src="logo.png" alt="Logo">
             </div>
-            <ul class="menu">
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/CelestialBeingDashboard/dashboard.html'">Dashboard</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/ArchAngelCommands/commands.html'">Commands</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/CurrentRaid/currentraid.html'">Current Raid</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/Leaderboard/lbs.html'">Leaderboard</button></li>
-                <li><button class="menu-btn" onclick="showPage('desert-carry')">Desert Carry</button></li>
-                <li><button class="logout-btn" onclick="window.location.href='https://blake0v2.github.io/CelestialBeingLogin/Log%20in.html'">Log Out [➔</button></li>
-                <li><button class="join-btn" onclick="window.location.href='https://discord.gg/TheArchAngels'">Join Discord</button></li>
+            <ul class="nav">
+                <li><a href="#">Dashboard</a></li>
+                <li><a href="#">Commands</a></li>
+                <li><a href="#">Current Raid</a></li>
+                <li><a href="#">Leaderboard</a></li>
+                <li><a href="#">Desert Carry</a></li>
+                <li><a href="#" class="logout">Log Out</a></li>
+                <li><a href="#">Join Discord</a></li>
             </ul>
         </div>
 
-        <div class="pricing-section">
-            <h2>Bot Command Prices</h2>
-            <div class="pricing-card">
-                <h3>Basic</h3>
-                <ul>
-                    <li>• Activity Check</li>
-                    <li>• Prefix Commands</li>
-                    <li>• Welcome Message</li>
-                </ul>
-                <p>Price: <strong>$2 USD</strong></p>
-            </div>
-        
-            <div class="pricing-card">
-                <h3>Standard</h3>
-                <ul>
-                    <li>• Game/Gamble Commands</li>
-                    <li>• Defense System</li>
-                    <li>• In-Game Update Messages (e.g., Island Raids)</li>
-                </ul>
-                <p>Price: <strong>$5 USD</strong></p>
-            </div>
-        
-            <div class="pricing-card">
-                <h3>Premium</h3>
-                <ul>
-                    <li>• Ticket System(s)</li>
-                    <li>• Custom Command(s)</li>
-                </ul>
-                <p>Price: <strong>$8 USD</strong></p>
+        <div class="main-content">
+            <h1>Bot Command Prices</h1>
+            <div class="pricing-cards">
+                <div class="card">
+                    <h2>Basic</h2>
+                    <ul>
+                        <li>Activity Check</li>
+                        <li>Prefix Commands</li>
+                        <li>Welcome Message</li>
+                    </ul>
+                    <p class="price">$2 USD</p>
+                </div>
+
+                <div class="card">
+                    <h2>Standard</h2>
+                    <ul>
+                        <li>Game/Gamble Commands</li>
+                        <li>Defense System</li>
+                        <li>In-Game Update Messages (e.g., Island Raids)</li>
+                    </ul>
+                    <p class="price">$5 USD</p>
+                </div>
+
+                <div class="card">
+                    <h2>Premium</h2>
+                    <ul>
+                        <li>Ticket System(s)</li>
+                        <li>Custom Command(s)</li>
+                    </ul>
+                    <p class="price">$8 USD</p>
+                </div>
             </div>
         </div>
     </div>
