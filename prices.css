@@ -1,112 +1,183 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General Body Styles */
 body {
-  font-family: Arial, sans-serif;
-  background: #f4f4f4;
-  display: flex;
-  height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e4bf67, #10233e);
+    display: flex;
+    height: 100vh;
 }
 
 .container {
-  display: flex;
-  width: 100%;
+    display: flex;
+    width: 100%;
 }
 
+/* Sidebar Styles */
 .sidebar {
-  width: 250px;
-  background-color: #242322;
-  color: #fff;
-  padding-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    width: 250px;
+    background-color: #242322;
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
 
-.sidebar .logo {
-  width: 80%;
-  margin-bottom: 30px;
+.sidebar .bot-icon img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 30px;
 }
 
-.sidebar .sidebar-buttons button {
-  background-color: #10233e;
-  color: #fff;
-  width: 100%;
-  padding: 10px;
-  margin: 5px 0;
-  border: none;
-  text-align: left;
-  font-size: 16px;
+.menu {
+    list-style: none;
+    padding: 0;
 }
 
-.sidebar .logout {
-  background-color: red;
+.menu-btn {
+    width: 100%;
+    padding: 15px;
+    background: #333;
+    border: 1px solid #ffffff30;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
 }
 
-.sidebar .discord {
-  background-color: #7289da;
+.menu-btn:hover {
+    background: #e4bf67;
 }
 
+.join-btn {
+    width: 100%;
+    padding: 15px;
+    background: #4553be;
+    border: 1px solid #ffffff30;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.join-btn:hover {
+    background: #e4bf67;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 15px;
+    background: #FF0000;
+    border: 1px solid #ffffff30;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+.logout-btn:hover {
+    background: #e4bf67;
+}
+
+/* Main Content Styles */
 .content {
-  flex-grow: 1;
-  background: linear-gradient(145deg, #e4bf67, #10233e);
-  color: #fff;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    flex: 1;
+    padding: 20px;
+    color: white;
+    overflow-y: auto;
 }
 
-.pricing-box {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
+header {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 2em;
 }
 
-.package {
-  background-color: #333;
-  padding: 20px;
-  width: 30%;
-  text-align: center;
-  border-radius: 10px;
+.pricing-section {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
 }
 
-.package h2 {
-  color: #f2a900;
+.pricing-card {
+    background-color: rgba(50, 50, 50, 0.7);
+    border-radius: 15px;
+    padding: 20px;
+    width: 30%;
+    text-align: center;
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
 }
 
-.package p {
-  font-size: 1.2em;
-  margin-bottom: 15px;
+.pricing-card h2 {
+    color: #e4bf67;
+    font-size: 2em;
 }
 
-.package ul {
-  list-style: none;
-  margin-bottom: 20px;
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
 }
 
-.package li {
-  margin: 5px 0;
+.pricing-card li {
+    font-size: 1.2em;
+    margin: 5px 0;
 }
 
-.purchase {
-  background-color: #f2a900;
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+.price {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
-.purchase:hover {
-  background-color: #e48c00;
+.purchase-btn {
+    background-color: #e4bf67;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1em;
 }
 
-.footer-text {
-  margin-top: 30px;
-  text-align: center;
-  font-size: 1.1em;
+.purchase-btn:hover {
+    background-color: #ffbf00;
+}
+
+/* Footer Text */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin-top: 20px;
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .pricing-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing-card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .menu-btn, .join-btn, .logout-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
 }
