@@ -322,3 +322,60 @@ body {
   margin: 10px auto;  /* Center the boxes */
   box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
+
+.pricing-section {
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.pricing-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #e4bf67; /* Gold color */
+}
+
+.pricing-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: #e4bf67; /* Gold color */
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.pricing-card p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.pricing-card strong {
+    color: #e4bf67; /* Gold color */
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-card {
+        width: 100%; /* Make cards full width on small screens */
+    }
+}
+
