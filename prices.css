@@ -1,4 +1,88 @@
-/* General Styles */
+/* Dashboard Page */
+.dashboard-box {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    margin: 50px auto;
+    width: 70%;
+    color: white;
+}
+
+#user-avatar img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.dashboard-box h1 {
+    font-size: 2em;
+}
+
+footer {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+footer a {
+    color: #e4bf67;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Command Buttons and Layout */
+.command-category {
+    margin-bottom: 20px;
+}
+
+.command-category h3 {
+    color: #e4bf67;
+    font-size: 0.9em; /* Smaller font size for better mobile view */
+    margin-bottom: 8px;
+}
+
+.command-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.command-item {
+    background-color: rgba(50, 50, 50, 0.7); /* Dark grey with 70% transparency */
+    border-radius: 8px;
+    padding: 10px; /* Reduced padding */
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+}
+
+.command-description {
+    font-size: 14px; /* Smaller font size */
+    color: #ffffff;
+    margin-top: 5px;
+}
+
+.command-btn {
+    background-color: #333;
+    color: white;
+    padding: 6px; /* Reduced padding */
+    border: none;
+    font-size: 0.9em; /* Smaller font size */
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.command-btn:hover {
+    background-color: #e4bf67;
+}
+
+/* Rest of styles */
 body {
     margin: 0;
     padding: 0;
@@ -11,7 +95,6 @@ body {
 .container {
     display: flex;
     width: 100%;
-    min-height: 100%;
 }
 
 .sidebar {
@@ -20,8 +103,6 @@ body {
     color: white;
     padding: 20px;
     text-align: center;
-    height: 100%;
-    flex-shrink: 0;  /* Prevent the sidebar from shrinking */
 }
 
 .sidebar .bot-icon img {
@@ -85,97 +166,180 @@ body {
 }
 
 .content {
-    flex-grow: 1;
-    padding: 40px;
+    flex: 1;
+    padding: 20px;
     color: white;
     overflow-y: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
-header {
-    background-color: #10233e;
-    width: 100%;
-    padding: 20px;
-    text-align: center;
-    color: white;
+.page {
+    display: none;
 }
 
-h1 {
-    margin: 0;
-    font-size: 36px;
+.page:first-child {
+    display: block;
 }
 
-/* Pricing Section */
-.pricing-section {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding: 40px 20px;
-    flex-wrap: wrap;
-    width: 100%;
-    max-width: 1200px;
-    margin-top: 40px;
+#current_raid,
+#commands,
+#leaderboard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  width: 100%;
+  max-width: 800px;
+  margin-top: 40px;
 }
 
-.pricing-card {
-    background-color: #222;
-    color: white;
-    padding: 20px;
-    width: 280px;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    transition: transform 0.3s ease;
+.command-category {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 5px;
+  text-align: center;
 }
 
-.pricing-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+.command-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Reduced gap between boxes */
+  justify-content: center;
 }
 
-.pricing-card h2 {
-    font-size: 24px;
-    margin-bottom: 15px;
-    color: #e4bf67;
+.command-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 12px; /* Reduced padding inside each box */
+  width: 180px; /* Smaller width */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(4px);
+  color: #ffffff;
+  transition: transform 0.2s ease-in-out;
+  text-align: center;
 }
 
-.pricing-card ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 20px;
+.command-box:hover {
+  transform: scale(1.02);
 }
 
-.pricing-card ul li {
-    font-size: 1em;
-    margin-bottom: 10px;
+.command-title {
+  font-weight: bold;
+  font-size: 14px; /* Reduced font size */
+  margin-bottom: 6px;
 }
 
-.pricing-card .price {
-    font-size: 28px;
-    font-weight: bold;
-    color: #e4bf67;
+#raid-status {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  font-size: 16px;
+}
+
+.raid-box {
+  display: none; /* Ensuring only one box is shown */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;  /* Limit the width of the boxes to prevent them from stretching */
+  margin: 10px auto;  /* Center the boxes */
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
+}
+
+.raid-image {
+  width: 100%;  /* Ensure image fits the width */
+  max-height: 300px;  /* Max height for uniformity */
+  object-fit: cover;  /* Ensure image is cropped to fit the box */
+  border-radius: 10px; /* Optional, for rounded corners */
+}
+
+#current_raid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+#jungle-island {
+  background: #38a351;  /* Jungle raid color */
+  border: 2px solid #6b7e6b8c;  
+}
+
+#snow-island {
+  background: #96d3f7;  /* Snow raid color */
+  border: 2px solid #467296a1;  
+}
+
+#dedu-island {
+  background: #701313;  /* Dedu raid color */
+  border: 2px solid #f7000077;  
+}
+
+.raid-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.raid-description {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.raid-footer {
+  font-size: 16px;
+  font-weight: bold;
+  color: #b0b0b0;
+}
+
+#leaderboard-status {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  font-size: 16px;
+}
+
+.leaderboard-box {
+  display: none; /* Ensuring only one box is shown */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  margin-bottom: 20px;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;  /* Limit the width of the boxes to prevent them from stretching */
+  margin: 10px auto;  /* Center the boxes */
+  box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
 
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
-    .sidebar {
-        width: 180px;
-    }
+  .sidebar {
+    width: 180px;
+  }
+  .main-content {
+    margin-left: 180px;
+    width: calc(100% - 180px);
+  }
 
-    .pricing-section {
-        flex-direction: column;
-        align-items: center;
-    }
+  .command-box {
+    width: 90%; /* Full width on smaller screens */
+  }
 
-    .pricing-card {
-        width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .main-content {
-        margin-left: 180px;
-        width: calc(100% - 180px);
-    }
+  .command-grid {
+    flex-direction: column;
+    align-items: center;
+  }
 }
