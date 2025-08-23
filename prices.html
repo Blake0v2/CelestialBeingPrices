@@ -23,20 +23,36 @@
             </ul>
         </div>
 
-        <div class="content">
-            <!-- Dashboard Page -->
-            <div id="dashboard" class="page">
-                <div class="dashboard-box">
-                    <h1>Welcome, <span id="username">{{ username or 'Guest' }}</span>!</h1>
-                    <div id="user-avatar">
-                        <!-- Set the user's avatar image dynamically -->
-                        <img id="avatar" src="{{ avatar_url or 'https://cdn.discordapp.com/embed/avatars/0.png' }}" alt="User Avatar">
-                    </div>
-                    <p>This is the Arch Angels official website, developed by @Blake0_o</p>
-                    <p>Please show your support by joining our Discord: <a href="https://discord.gg/TheArchAngels" target="_blank">Discord.gg/TheArchAngels</a></p>
-                </div>
+        <div class="pricing-section">
+            <h2>Bot Command Prices</h2>
+            <div class="pricing-card">
+                <h3>Basic</h3>
+                <ul>
+                    <li>• Activity Check</li>
+                    <li>• Prefix Commands</li>
+                    <li>• Welcome Message</li>
+                </ul>
+                <p>Price: <strong>$2 USD</strong></p>
             </div>
-
+        
+            <div class="pricing-card">
+                <h3>Standard</h3>
+                <ul>
+                    <li>• Game/Gamble Commands</li>
+                    <li>• Defense System</li>
+                    <li>• In-Game Update Messages (e.g., Island Raids)</li>
+                </ul>
+                <p>Price: <strong>$5 USD</strong></p>
+            </div>
+        
+            <div class="pricing-card">
+                <h3>Premium</h3>
+                <ul>
+                    <li>• Ticket System(s)</li>
+                    <li>• Custom Command(s)</li>
+                </ul>
+                <p>Price: <strong>$8 USD</strong></p>
+            </div>
         </div>
 
     <script src="index.js"></script>
