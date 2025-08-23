@@ -36,23 +36,23 @@ footer a:hover {
 }
 
 /* Command Buttons and Layout */
-.lbs-category {
+.command-category {
     margin-bottom: 20px;
 }
 
-.lbs-category h3 {
+.command-category h3 {
     color: #e4bf67;
     font-size: 1em;
     margin-bottom: 8px;
 }
 
-.lbs-list {
+.command-list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.lbs-item {
+.command-item {
     background-color: rgba(50, 50, 50, 0.7); /* Dark grey with 70% transparency */
     border-radius: 8px;
     padding: 15px;
@@ -62,22 +62,23 @@ footer a:hover {
     border: 1px solid #ddd;
 }
 
-.lbs-description {
+.command-description {
     font-size: 16px;
     color: #ffffff;
     margin-top: 5px;
 }
 
-.lbs-btn {
+.command-btn {
     background-color: #333;
     color: white;
+    padding: 10px;
     border: none;
     font-size: 1em;
     border-radius: 10px;
     cursor: pointer;
 }
 
-.lbs-btn:hover {
+.command-btn:hover {
     background-color: #e4bf67;
 }
 
@@ -179,6 +180,56 @@ body {
     display: block;
 }
 
+.pricing-section {
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+}
+
+.pricing-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    color: #e4bf67; /* Gold color */
+}
+
+.pricing-card {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    width: 250px;
+    text-align: left;
+}
+
+.pricing-card h3 {
+    font-size: 1.8em;
+    color: #e4bf67; /* Gold color */
+    margin-bottom: 15px;
+}
+
+.pricing-card ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.pricing-card ul li {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.pricing-card p {
+    font-size: 1.2em;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.pricing-card strong {
+    color: #e4bf67; /* Gold color */
+}
+
 #current_raid,
 #commands,
 #leaderboard {
@@ -235,7 +286,7 @@ body {
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  font-size: 16px;
+  font-size: 2px;
 }
 
 .raid-box {
@@ -297,7 +348,7 @@ body {
 .raid-footer {
   font-size: 16px;
   font-weight: bold;
-  color: #b0b0b0;
+  color: #FFFFFF;
 }
 
 #leaderboard-status {
@@ -323,77 +374,26 @@ body {
   box-sizing: border-box; /* Ensure padding doesn't affect size */
 }
 
-.pricing-section {
-    margin: 40px auto;
-    text-align: center;
-    color: white;
-}
-
-.pricing-section h2 {
-    font-size: 2.5em;
-    margin-bottom: 30px;
-    color: #e4bf67; /* Gold color */
-}
-
-.pricing-card {
-    background-color: rgba(0, 0, 0, 0.7);
-    padding: 30px;
-    margin: 20px;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    width: 250px;
-    text-align: left;
-}
-
-.pricing-card h3 {
-    font-size: 1.8em;
-    color: #e4bf67; /* Gold color */
-    margin-bottom: 15px;
-}
-
-.pricing-card ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.pricing-card ul li {
-    font-size: 1em;
-    margin-bottom: 10px;
-    color: #ffffff;
-}
-
-.pricing-card p {
-    font-size: 1.2em;
-    margin-top: 20px;
-    color: #ffffff;
-}
-
-.pricing-card strong {
-    color: #e4bf67; /* Gold color */
-}
-
 /* MOBILE RESPONSIVENESS */
 @media screen and (max-width: 768px) {
-  .sidebar {
-    width: 180px;
-  }
-  .main-content {
-    margin-left: 180px;
-    width: calc(100% - 180px);
-  }
+    .sidebar {
+        width: 180px;
+    }
+    .main-content {
+        margin-left: 180px;
+        width: calc(100% - 180px);
+    }
 
-  .command-box {
-    width: 90%; /* Full width on smaller screens */
-  }
+    .command-box {
+        width: 90%; /* Full width on smaller screens */
+    }
 
-  .command-grid {
-    flex-direction: column;
-    align-items: center;
-  }
-}
+    .command-grid {
+        flex-direction: column;
+        align-items: center;
+    }
 
-   .pricing-card {
-     width: 100%; /* Make cards full width on small screens */
+    .pricing-card {
+        width: 100%; /* Make cards full width on small screens */
     }
 }
