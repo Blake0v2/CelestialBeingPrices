@@ -9,14 +9,43 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    text-align: center;
-    flex-direction: column; /* Added to center the footer */
+    text-align: center; /* Centering the text globally */
+    flex-direction: column;
 }
 
+/* How this works section */
+.how-it-works {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    padding: 40px;
+    width: 80%;
+    max-width: 1000px;
+    color: white;
+    margin-top: 40px;
+    text-align: center; /* Centering the text inside this section */
+}
+
+.how-it-works h3 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.how-it-works hr {
+    border: 1px solid #e4bf67;
+    margin-bottom: 20px;
+}
+
+.how-it-works p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Footer */
 footer {
     margin-top: 30px;
     color: white;
     font-size: 16px;
+    text-align: center; /* Centering footer text */
 }
 
 footer p {
@@ -40,10 +69,10 @@ footer p {
     border-radius: 15px;
     padding: 40px;
     color: white;
-    width: 400px; /* Reduced width to make the box taller */
-    height: 700px; /* Increased height for taller boxes */
+    width: 400px;
+    height: 700px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    text-align: center;
+    text-align: center; /* Centering text inside the boxes */
     margin: 20px;
 }
 
@@ -78,7 +107,7 @@ footer p {
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
-    margin-top: auto; /* Ensures the button stays at the bottom */
+    margin-top: auto;
 }
 
 .purchase-btn:hover {
