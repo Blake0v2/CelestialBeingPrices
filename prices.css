@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
@@ -37,45 +38,47 @@ footer p {
 .pricing-box {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    padding: 60px; /* Increased padding */
+    padding: 40px;
     color: white;
-    width: 900px; /* Increased width (3x bigger) */
+    width: 400px; /* Reduced width to make the box taller */
+    height: 700px; /* Increased height for taller boxes */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     text-align: center;
     margin: 20px;
 }
 
 .pricing-box h2 {
-    font-size: 60px; /* Increased font size */
-    margin-bottom: 25px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .pricing-box p {
-    font-size: 45px; /* Increased font size */
-    margin-bottom: 30px;
+    font-size: 36px;
+    margin-bottom: 25px;
 }
 
 .pricing-box ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .pricing-box ul li {
-    font-size: 24px; /* Increased font size */
-    margin-bottom: 15px;
+    font-size: 20px;
+    margin-bottom: 12px;
 }
 
 .purchase-btn {
     background-color: #e4bf67;
     color: black;
-    padding: 30px; /* Increased padding */
+    padding: 20px;
     border: none;
     border-radius: 12px;
-    font-size: 35px; /* Increased font size */
+    font-size: 30px;
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
+    margin-top: auto; /* Ensures the button stays at the bottom */
 }
 
 .purchase-btn:hover {
