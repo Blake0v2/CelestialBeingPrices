@@ -24,9 +24,6 @@ body {
     color: white;
     margin-top: 40px;
     text-align: center;
-    /* Ensure the section is horizontally centered */
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .how-it-works h3 {
