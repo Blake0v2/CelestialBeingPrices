@@ -1,109 +1,53 @@
-/* General Layout */
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #e4bf67, #10233e);
-    display: flex;
-    height: 100vh;
-}
-
-.container {
-    display: flex;
-    width: 100%;
-}
-
-.sidebar {
-    width: 250px;
-    background-color: #242322;
     color: white;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     text-align: center;
 }
 
-.sidebar .bot-icon img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-bottom: 30px;
-}
-
-.menu {
-    list-style: none;
-    padding: 0;
-}
-
-.menu-btn {
-    width: 100%;
-    padding: 15px;
-    background: #333;
-    border: 1px solid #ffffff30;
-    border-radius: 8px;
+footer {
+    margin-top: 20px;
     color: white;
+    font-size: 14px;
+}
+
+footer p {
     font-size: 16px;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.menu-btn:hover {
-    background: #e4bf67;
-}
-
-.join-btn {
-    width: 100%;
-    padding: 15px;
-    background: #4553be;
-    border: 1px solid #ffffff30;
-    border-radius: 8px;
     color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.join-btn:hover {
-    background: #e4bf67;
-}
-
-.logout-btn {
-    width: 100%;
-    padding: 15px;
-    background: #FF0000;
-    border: 1px solid #ffffff30;
-    border-radius: 8px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    margin: 10px 0;
-}
-
-.logout-btn:hover {
-    background: #e4bf67;
+    margin: 20px auto;
 }
 
 /* Pricing Container */
 .pricing-container {
-    flex: 1;
-    padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
+    gap: 30px;
+    padding: 20px;
     flex-wrap: wrap;
 }
 
+/* Pricing Box Styles */
 .pricing-box {
-    background: rgba(0, 0, 0, 0.7);
-    border-radius: 12px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
     padding: 20px;
     color: white;
-    margin: 10px;
     width: 250px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     text-align: center;
 }
 
 .pricing-box h2 {
     font-size: 24px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .pricing-box p {
@@ -112,7 +56,7 @@ body {
 }
 
 .pricing-box ul {
-    list-style: none;
+    list-style-type: none;
     padding: 0;
     margin-bottom: 20px;
 }
@@ -125,29 +69,23 @@ body {
 .purchase-btn {
     background-color: #e4bf67;
     color: black;
-    padding: 10px;
+    padding: 12px;
     border: none;
     border-radius: 8px;
-    cursor: pointer;
     font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
 }
 
 .purchase-btn:hover {
     background-color: #10233e;
 }
 
-/* Footer */
-footer {
-    text-align: center;
-    margin-top: 20px;
-    color: white;
-}
-
-footer a {
-    color: #e4bf67;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: underline;
+/* Responsive Design */
+@media (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column;
+        align-items: center;
+    }
 }
