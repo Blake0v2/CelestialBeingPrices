@@ -24,6 +24,9 @@ body {
     color: white;
     margin-top: 40px;
     text-align: center;
+    /* Ensure the section is horizontally centered */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .how-it-works h3 {
@@ -165,14 +168,14 @@ footer p {
     .how-it-works {
         padding: 30px;
         width: 90%; /* Make this section fit better */
-        margin: 0 auto; /* Center the section */
+        margin: 0 auto; /* Ensure horizontal centering */
     }
 
     .how-it-works h3 {
-        font-size: 28px; /* Adjust heading size */
+        font-size: 28px;
     }
 
     .how-it-works p {
-        font-size: 16px; /* Adjust paragraph size */
+        font-size: 16px;
     }
 }
