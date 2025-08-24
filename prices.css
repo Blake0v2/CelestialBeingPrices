@@ -6,11 +6,12 @@ body {
     background: linear-gradient(to right, #e4bf67, #10233e);
     color: white;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    text-align: center; /* Centering the text globally */
+    justify-content: flex-start; /* Allow content to start from the top */
+    align-items: flex-start; 
     flex-direction: column;
+    min-height: 100vh; /* Ensure it takes full viewport height */
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
 }
 
 /* How this works section */
@@ -22,7 +23,7 @@ body {
     max-width: 1000px;
     color: white;
     margin-top: 40px;
-    text-align: center; /* Centering the text inside this section */
+    text-align: center;
 }
 
 .how-it-works h3 {
@@ -45,7 +46,7 @@ footer {
     margin-top: 30px;
     color: white;
     font-size: 16px;
-    text-align: center; /* Centering footer text */
+    text-align: center;
 }
 
 footer p {
@@ -57,10 +58,12 @@ footer p {
 .pricing-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 50px;
     padding: 40px;
     flex-wrap: wrap;
+    width: 100%; /* Full width of the screen */
+    box-sizing: border-box;
 }
 
 /* Pricing Box Styles */
@@ -72,7 +75,7 @@ footer p {
     width: 400px;
     height: 700px;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
-    text-align: center; /* Centering text inside the boxes */
+    text-align: center;
     margin: 20px;
 }
 
@@ -114,48 +117,54 @@ footer p {
     background-color: #10233e;
 }
 
-/* Responsive Design */
+/* Mobile Responsive Design */
 @media (max-width: 768px) {
-    /* Ensure body height is adjusted to allow scrolling */
+    /* Body Adjustments for Scrolling */
     body {
-        height: auto; /* Allow vertical scroll */
+        height: auto; /* Allow scrolling */
+        padding: 0;
+        display: block; /* Change to block-level layout */
     }
 
+    /* Allow Container to Scroll */
     .pricing-container {
         flex-direction: column;
         align-items: center;
         padding: 20px;
-        gap: 20px; /* Reduced gap for mobile */
+        gap: 20px;
         overflow-y: auto; /* Enable vertical scrolling */
-        max-height: 100vh; /* Allow for scrollable content */
+        max-height: 100vh; /* Restrict to the height of the screen */
     }
 
+    /* Pricing Box Adjustments */
     .pricing-box {
-        width: 90%; /* Make pricing boxes take up more width */
-        height: auto; /* Remove fixed height */
-        padding: 20px; /* Adjust padding for smaller screens */
-        margin-bottom: 20px; /* Add space between boxes */
+        width: 90%; /* Pricing boxes take up most of the width */
+        height: auto; /* Auto height for smaller screens */
+        padding: 20px;
+        margin-bottom: 20px; /* Add spacing between boxes */
     }
 
     .pricing-box h2 {
-        font-size: 28px; /* Adjust font size for smaller screens */
+        font-size: 28px; /* Adjust font size for mobile */
     }
 
     .pricing-box p {
-        font-size: 24px; /* Adjust font size for smaller screens */
+        font-size: 24px; /* Adjust font size for mobile */
     }
 
     .pricing-box ul li {
-        font-size: 18px; /* Adjust font size for smaller screens */
+        font-size: 18px; /* Adjust list item font size */
     }
 
     .purchase-btn {
-        font-size: 24px; /* Adjust font size for smaller screens */
-        padding: 15px; /* Adjust padding for smaller screens */
+        font-size: 24px; /* Adjust button font size for mobile */
+        padding: 15px; /* Adjust padding for mobile */
     }
 
+    /* How it works Section Adjustments */
     .how-it-works {
-        padding: 30px; /* Adjust padding for smaller screens */
+        padding: 30px;
+        width: 90%; /* Make this section fit better */
     }
 
     .how-it-works h3 {
