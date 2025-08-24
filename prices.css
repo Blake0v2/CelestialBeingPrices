@@ -87,6 +87,10 @@ footer p {
     margin-bottom: 12px;
 }
 
+.pricing-box:hover {
+  transform: scale(1.02);
+}
+
 .purchase-btn {
     background-color: #e4bf67;
     color: black;
