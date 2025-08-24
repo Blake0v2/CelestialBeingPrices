@@ -1,4 +1,4 @@
-
+/* Global Styles */
 body {
     margin: 0;
     padding: 0;
@@ -10,18 +10,18 @@ body {
     align-items: center;
     height: 100vh;
     text-align: center;
+    flex-direction: column; /* Added to center the footer */
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 30px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 footer p {
-    font-size: 16px;
-    color: white;
     margin: 20px auto;
+    max-width: 1000px;
 }
 
 /* Pricing Container */
@@ -38,20 +38,21 @@ footer p {
 .pricing-box {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    padding: 20px;
+    padding: 30px; /* Increased padding */
     color: white;
-    width: 250px;
+    width: 300px; /* Increased width */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     text-align: center;
+    margin: 20px;
 }
 
 .pricing-box h2 {
-    font-size: 24px;
+    font-size: 28px; /* Increased font size */
     margin-bottom: 15px;
 }
 
 .pricing-box p {
-    font-size: 18px;
+    font-size: 20px; /* Increased font size */
     margin-bottom: 20px;
 }
 
@@ -69,10 +70,10 @@ footer p {
 .purchase-btn {
     background-color: #e4bf67;
     color: black;
-    padding: 12px;
+    padding: 14px; /* Increased padding */
     border: none;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 18px; /* Increased font size */
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
