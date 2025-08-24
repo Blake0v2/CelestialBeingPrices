@@ -165,6 +165,7 @@ footer p {
     .how-it-works {
         padding: 30px;
         width: 90%; /* Make this section fit better */
+        margin: 0 auto; /* Center the section */
     }
 
     .how-it-works h3 {
