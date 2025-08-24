@@ -29,8 +29,8 @@ footer p {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding: 20px;
+    gap: 50px;
+    padding: 40px;
     flex-wrap: wrap;
 }
 
@@ -38,42 +38,42 @@ footer p {
 .pricing-box {
     background-color: rgba(0, 0, 0, 0.7);
     border-radius: 15px;
-    padding: 30px; /* Increased padding */
+    padding: 60px; /* Increased padding */
     color: white;
-    width: 300px; /* Increased width */
+    width: 900px; /* Increased width (3x bigger) */
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.37);
     text-align: center;
     margin: 20px;
 }
 
 .pricing-box h2 {
-    font-size: 28px; /* Increased font size */
-    margin-bottom: 15px;
+    font-size: 60px; /* Increased font size */
+    margin-bottom: 25px;
 }
 
 .pricing-box p {
-    font-size: 20px; /* Increased font size */
-    margin-bottom: 20px;
+    font-size: 45px; /* Increased font size */
+    margin-bottom: 30px;
 }
 
 .pricing-box ul {
     list-style-type: none;
     padding: 0;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .pricing-box ul li {
-    font-size: 16px;
-    margin-bottom: 10px;
+    font-size: 24px; /* Increased font size */
+    margin-bottom: 15px;
 }
 
 .purchase-btn {
     background-color: #e4bf67;
     color: black;
-    padding: 14px; /* Increased padding */
+    padding: 30px; /* Increased padding */
     border: none;
-    border-radius: 8px;
-    font-size: 18px; /* Increased font size */
+    border-radius: 12px;
+    font-size: 35px; /* Increased font size */
     cursor: pointer;
     width: 100%;
     transition: background-color 0.3s;
