@@ -119,5 +119,42 @@ footer p {
     .pricing-container {
         flex-direction: column;
         align-items: center;
+        padding: 20px; /* Reduce padding for smaller screens */
+    }
+
+    .pricing-box {
+        width: 90%; /* Make pricing boxes take up more width */
+        height: auto; /* Remove fixed height */
+        padding: 20px; /* Adjust padding for smaller screens */
+        margin-bottom: 20px; /* Add space between boxes */
+    }
+
+    .pricing-box h2 {
+        font-size: 28px; /* Adjust font size for smaller screens */
+    }
+
+    .pricing-box p {
+        font-size: 24px; /* Adjust font size for smaller screens */
+    }
+
+    .pricing-box ul li {
+        font-size: 18px; /* Adjust font size for smaller screens */
+    }
+
+    .purchase-btn {
+        font-size: 24px; /* Adjust font size for smaller screens */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .how-it-works {
+        padding: 30px; /* Adjust padding for smaller screens */
+    }
+
+    .how-it-works h3 {
+        font-size: 28px; /* Adjust heading size */
+    }
+
+    .how-it-works p {
+        font-size: 16px; /* Adjust paragraph size */
     }
 }
