@@ -3,64 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arch Angels Dashboard</title>
-    <link rel="stylesheet" href="prices.css">
+    <title>Pricing - Arch Angels Dashboard</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <div class="sidebar">
-            <div class="bot-icon">
-                <img src="https://i.postimg.cc/Pr31Rx40/Here-is-a-non-realistic-profile-picture-in-a-gold-white-and-blue-theme-inspired-by-an-Archangel.png" alt="Bot Icon">
-            </div>
-            <ul class="menu">
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/CelestialBeingDashboard/dashboard.html'">Dashboard</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/ArchAngelCommands/commands.html'">Commands</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/CurrentRaid/currentraid.html'">Current Raid</button></li>
-                <li><button class="menu-btn" onclick="window.location.href='https://blake0v2.github.io/Leaderboard/lbs.html'">Leaderboard</button></li>
-                <li><button class="menu-btn" onclick="showPage('desert-carry')">Desert Carry</button></li>
-                <li><button class="logout-btn" onclick="window.location.href='https://blake0v2.github.io/CelestialBeingLogin/Log%20in.html'">Log Out [➔</button></li>
-                <li><button class="join-btn" onclick="window.location.href='https://discord.gg/TheArchAngels'">Join Discord</button></li>
+    <div class="pricing-container">
+        <div class="pricing-box basic">
+            <h2>Basic</h2>
+            <p>$2 USD</p>
+            <ul>
+                <li>Activity Check</li>
+                <li>Prefix Commands</li>
+                <li>Welcome message</li>
             </ul>
-        </div>
-        <div class="pricing-container">
-            <div class="pricing-box basic">
-                <h2>Basic</h2>
-                <p>$2 USD</p>
-                <ul>
-                    <li>Activity Check</li>
-                    <li>Prefix Commands</li>
-                    <li>Welcome message</li>
-                </ul>
-                <button class="purchase-btn">Purchase for $2</button>
-            </div>
-
-            <div class="pricing-box standard">
-                <h2>Standard</h2>
-                <p>$5 USD</p>
-                <ul>
-                    <li>Game/Gamble Commands</li>
-                    <li>Defense Systems</li>
-                    <li>In-game Update Messages (e.g. Island Raids)</li>
-                    <li>24/7 Support</li>
-                </ul>
-                <button class="purchase-btn">Purchase for $5</button>
-            </div>
-
-            <div class="pricing-box premium">
-                <h2>Premium</h2>
-                <p>$8 USD</p>
-                <ul>
-                    <li>Ticket Systems</li>
-                    <li>Custom Commands</li>
-                    <li>24/7 Support</li>
-                </ul>
-                <button class="purchase-btn">Purchase for $8</button>
-            </div>
+            <button class="purchase-btn">Purchase for $2</button>
         </div>
 
-        <footer>
-            <p>In all of these packages, you may choose which commands you'd like in your server. This also includes 24/7 run time for the bot.</p>
-        </footer>
+        <div class="pricing-box standard">
+            <h2>Standard</h2>
+            <p>$5 USD</p>
+            <ul>
+                <li>Game/Gamble Commands</li>
+                <li>Defense Systems</li>
+                <li>In-game Update Messages (e.g. Island Raids)</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button class="purchase-btn">Purchase for $5</button>
+        </div>
+
+        <div class="pricing-box premium">
+            <h2>Premium</h2>
+            <p>$8 USD</p>
+            <ul>
+                <li>Ticket Systems</li>
+                <li>Custom Commands</li>
+                <li>24/7 Support</li>
+            </ul>
+            <button class="purchase-btn">Purchase for $8</button>
+        </div>
     </div>
+
+    <footer>
+        <p>In all of these packages, you may choose which commands you'd like in your server. This also includes 24/7 run time for the bot.</p>
+    </footer>
 </body>
 </html>
