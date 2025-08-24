@@ -116,8 +116,9 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    /* Ensure body height is adjusted to allow scrolling */
     body {
-        height: auto; /* Allow scrolling */
+        height: auto; /* Allow vertical scroll */
     }
 
     .pricing-container {
@@ -125,8 +126,8 @@ footer p {
         align-items: center;
         padding: 20px;
         gap: 20px; /* Reduced gap for mobile */
-        overflow-y: scroll; /* Enable vertical scrolling */
-        max-height: 100vh; /* Ensure no overflow at the top */
+        overflow-y: auto; /* Enable vertical scrolling */
+        max-height: 100vh; /* Allow for scrollable content */
     }
 
     .pricing-box {
